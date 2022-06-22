@@ -1,0 +1,2 @@
+C:\Users\f_nan\source\repos\projetoPi\x64\Debug\projetoPi.exe
+D:\studying\computacao-grapica\projetocGpi\x64\Debug\projetoPi.exe
