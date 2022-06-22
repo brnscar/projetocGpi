@@ -21,7 +21,7 @@ void setKernell(Mat img) {
     imshow("Original", img);
     imshow("Editada", identity);
     waitKey();
-    imwrite("ml_kernell.png", identity);
+    imwrite("kernell.png", identity);
     destroyAllWindows();
 }
 
@@ -35,7 +35,7 @@ void setBlur(Mat img) {
     filter2D(img, identity, -1, kernel2, Point(-1, -1), 0, 4);
     imshow("Original", img);
     imshow("Editada", identity);
-    imwrite("ml_blur.png", identity);
+    imwrite("blur.png", identity);
     waitKey();
     destroyAllWindows();
 
@@ -51,7 +51,7 @@ void setSharpening(Mat img) {
     filter2D(img, sharp_img, -1, kernel3, Point(-1, -1), 0, BORDER_DEFAULT);
     imshow("Original", img);
     imshow("Editada", sharp_img);
-    imwrite("ml_sharpening.png", sharp_img);
+    imwrite("sharpening.png", sharp_img);
     waitKey();
     destroyAllWindows();
 
@@ -63,7 +63,7 @@ void setMediumBlur(Mat img) {
     medianBlur(img, median_blurred, (5, 5));
     imshow("Original", img);
     imshow("Editada", median_blurred);
-    imwrite("ml_medium_blur.png", median_blurred);
+    imwrite("medium_blur.png", median_blurred);
     waitKey();
     destroyAllWindows();
 
